@@ -4,51 +4,37 @@
         <meta charset="utf-8">
         <title>Log In</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/styleLogin.css">
     </head>
     <body>
-        <hr />
-        <nav class="menu">
-            <p class="navbar">
-                <a href="index.html"><img src="static/logo.png"></a>
-                <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="#">Contact Us</a> | <a href="signup.html">Sign up</a>
-            </p>
-        </nav>
-        <hr>
-        <div class="container">
-            <div class="formcontainer">
-                <fieldset>
-                    <legend>LOGIN</legend>
+
+            <nav class="fadeInDown">
+                    <a class="underlineHover2" href="index.html"><img src="static/logo.png" height="50px" width="70px" class="logo" alt="logo"></a>
+                    <a class="underlineHover2" href="index.html">Home</a>
+                    <a class="underlineHover2" href="about.html">About</a>
+                    <a class="underlineHover2" href="#">Contact Us</a>
+                    <a class="underlineHover2" href="signup.html">Sign up</a>
+            </nav>
+
+        <div class="wrapper fadeInDown">
+            <div id="formContent">
+                <div class="fadeIn first">
+                    <br>
+                    <img src="static/logo.png" height="80px" width="30px" id="icon" alt="User Icon" />
+                </div>
+                <h2 class="active"> Sign In </h2>
+                <a class="inactive underlineHover" href="signup.html">Sign Up </a>
                     <form class="loginform" action="home.html">
-                        <table border="0">
-                            <tr>
-                                <td><label for="username">Username:</label></td>
-                                <td><input type="text" id="username" placeholder="Enter Username" name="username" required></td>
-                            </tr>
-                            <tr>
-                                <td><label for="passwd">Password:</label></td>
-                                <td><input type="password" id="passwd" placeholder="Enter Password" name="passwd" required></td>
-                            </tr>
-                            <tr><td><br></td></tr>
-                            <tr>
-                                <td>
-                                    <label>
-                                         Remember me
-                                        <input type="checkbox" checked="checked" name="remember">
-                                    </label>
-                                </td>
-                            </tr>
-                            <tr><td><br></td></tr>
-                            <tr>
-                                <td rowspan="2" >
-                                    <input type="submit" value="Log In">
-                                </td>
-                            </tr>
-                        </table>
+                        <input type="text" id="username" class="fadeIn second" name="login" placeholder="Username" required>
+                        <input type="text" id="password" class="fadeIn third" name="login" placeholder="Password" required><br>
+                         Remember me <input type="checkbox" checked="checked" name="remember" class="fadeIn fourth"><br>
+                        <input type="submit" class="fadeIn fifth" value="Log In">       
                     </form>   
-                </fieldset>
+                <div id="formFooter">
+                    <a class="underlineHover" href="forgotpasswd.html">Forgot Password?</a>
+                </div>
             </div>
-            <br>
-            <a href="forgotpasswd.html">Forgot password?</a>
         </div>
     </body>
 </html>

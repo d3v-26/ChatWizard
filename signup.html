@@ -4,66 +4,42 @@
         <meta charset="utf-8">
         <title>Sign Up</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/styleLogin.css">
     </head>
     <body>
-        <hr>
-        <nav class="menu">
-            <p class="navbar">
-                <a href="index.html"><img src="static/logo.png"></a>
-                <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="#">Contact Us</a> | <a href="login.html">Login</a>
-            </p>
-        </nav>
-        <hr>
-        <div class="container">
-            <div class="formcontainer">
-                <fieldset>
-                    <legend>Sign Up</legend>
-                <form class="signupform">
-                    <table border="0">
-                        <tr>
-                            <td><label for="username">Username:</label></td>
-                            <td><input type="text" id="username" placeholder="Enter Username" name="username" required></td>
-                        </tr>
-                        <tr>
-                            <td><label for="passwd">Password:</label></td>
-                            <td><input type="password" id="passwd" placeholder="Enter Password" name="passwd" required></td>
-                        </tr>
-                        <tr>
-                            <td><label for="rpasswd">Password:</label></td>
-                            <td><input type="password" id="rpasswd" placeholder="Re -Enter Password" name="passwd" required></td>
-                        </tr>
-                        <tr>
-                            <td><label for="mail">Enter Your Email:</label></td>
-                            <td><input type="email" id="mail" placeholder="Enter Email ID" name="mail" required></td>
-                        </tr>
-                        <tr>
-                            <td><label for="phone">Enter Your Contact info(+91):</label></td>
-                            <td><input type="tel" id="phone" placeholder="Enter Your phone no." name="phone" required pattern="[0-9]{10}"></td>
-                        </tr>
-                        <tr><td><br></td></tr>
-                        <tr>
-                            <td>
-                                <label>
-                                     Keep me Signed In
-                                    <input type="checkbox" checked="checked" name="remember">
-                                </label>
-                            </td>
-                        </tr>
-                        <tr><td><br></td></tr>
-                        <tr>
-                            <td><label for="agreement">Agree To our <a href="#">End Term User Agreement</a></label></td>
-                            <td><input type="checkbox" name="agreement" id="agreement"  required></td>
-                        </tr>
-                        <tr><td><br></td></tr>
-                        <tr>
-                            <td rowspan="2" >
-                                <input type="submit" value="Sign Up">
-                            </td>
-                        </tr>
-                    </table>
-                </form>  
-                </fieldset>
+
+            <nav class="fadeInDown">
+                    <a class="underlineHover2" href="index.html"><img src="static/logo.png" height="50px" width="70px" class="logo" alt="logo"></a>
+                    <a class="underlineHover2" href="index.html">Home</a>
+                    <a class="underlineHover2" href="about.html">About</a>
+                    <a class="underlineHover2" href="#">Contact Us</a>
+                    <a class="underlineHover2" href="login.html">Sign In</a>
+            </nav>
+
+        <div class="wrapper fadeInDown">
+            <div id="formContent">
+                <div class="fadeIn first">
+                    <br>
+                    <img src="static/logo.png" height="80px" width="30px" id="icon" alt="User Icon" />
+                </div>
+                <h2 class="active"> Sign Up </h2>
+                <a class="inactive underlineHover" href="login.html">Sign In </a>
+                    <form class="loginform" action="home.html">
+                        <input type="text" id="username" class="fadeIn second" name="login" placeholder="Username">
+                        <input type="password" id="password" class="fadeIn third" name="login" placeholder="Password"><br>
+                        <input type="password" id="rpassword" class="fadeIn third" name="login" placeholder="Re-Type Password"><br>
+                        <input type="email" class="fadeIn third"  id="mail" placeholder="Your Email" name="mail" required><br>
+                        <input type="tel" id="phone" class="fadeIn third"  placeholder="Enter Your phone no.(+91)" name="phone" required pattern="[0-9]{10}"><br><br>
+                        Keep me Signed In &nbsp;<input type="checkbox" class="fadeIn third"  checked="checked" name="remember"><br>
+                        <input type="submit" class="fadeIn fifth" value="Create Your Free Account"><br>
+                    </form>   
+                <div id="formFooter">
+                    By signing up you agree to our
+                    <a class="underlineHover" href="#">Terms and Conditions</a>
+                </div>
             </div>
         </div>
+    
     </body>
 </html>

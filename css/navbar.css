@@ -1,0 +1,55 @@
+nav{
+    position: fixed;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #24252A;
+    padding: 15px 16px;
+    font-size: 17px;
+    z-index: 1;
+}
+nav a{
+   padding: 0px 10px; 
+}
+.logo{
+    position: fixed;
+    top: 0px;
+    left:0px;
+    height: 58px;
+    cursor: pointer;
+}
+.links{
+    list-style: none;
+}
+button{
+    padding: 4px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: rgba(0,136,169,0.8);
+}
+.underlineHover2:after {
+  display: block;
+  left: 0;
+  bottom: -10px;
+  width: 0;
+  height: 2px;
+  background-color: #56baed;
+  content: "";
+  transition: width 0.2s;
+}
+
+.underlineHover2:hover {
+  color: skyblue;
+}
+
+.underlineHover2:hover:after{
+  width: 100%;
+}

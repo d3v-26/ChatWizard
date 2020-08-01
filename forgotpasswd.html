@@ -3,28 +3,31 @@
         <meta charset="utf-8">
         <title>Log In</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/styleLogin.css">
     </head>
     <body>
-        <hr>
-        <nav class="menu">
-            <p class="navbar">
-                <a href="index.html"><img src="static/logo.png"></a>
-                <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="#">Contact Us</a> | <a href="signup.html">Sign up</a>
-            </p>
-        </nav>
-        <hr>
-        <br><br>
+    
+            <nav class="fadeInDown">
+                    <a class="underlineHover2" href="index.html"><img src="static/logo.png" height="50px" width="70px" class="logo" alt="logo"></a>
+                    <a class="underlineHover2" href="index.html">Home</a>
+                    <a class="underlineHover2" href="about.html">About</a>
+                    <a class="underlineHover2" href="#">Contact Us</a>
+                    <a class="underlineHover2" href="signup.html">Sign up</a>
+            </nav>
+
+      <br><br>
+        <div class="wrapper fadeInDown">
+            <div id="formContent">
+                <div class="fadeIn first">
+                    <br>
+                    <img src="static/logo.png" height="80px" width="30px" id="icon" alt="User Icon" />
+                </div>
         <form class="forgotpasswdform">
-            <table border="0">
-                <tr>
-                    <td>Enter Your Registered Email ID: </td>
-                    <td><input type="email" name="mail" id="mail" placeholder="Enter Your Email ID" required></td>
-                </tr>
-                <tr><td><br></td></tr>
-                <tr>
-                    <td><input type="submit" value="Get Reset Password Link"></td>
-                </tr>
-            </table>    
+            <input type="email" id="rmail" class="fadeIn second" name="rmail" placeholder="Registered Email ID" required>
+            <input type="submit" class="fadeIn third" value="Get Reset Password Link">
         </form>
+                </div>
+        </div>
     </body>
 </html>
