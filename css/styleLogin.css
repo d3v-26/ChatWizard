@@ -2,17 +2,19 @@
 
 
 body {
-    background-color: #56baed;
+    /*background-color: #56baed;*/
+  background: -webkit-linear-gradient(left, #7579ff, #b224ef);
   font-family: "Poppins", sans-serif;
   height: 100vh;
 }
 
 a, nav a{
-  color: #92badd;
+  color: #7579ff;
   display:inline-block;
   text-decoration: none;
   font-weight: 400;
 }
+
 h2 {
   text-align: center;
   font-size: 16px;
@@ -21,6 +23,7 @@ h2 {
   display:inline-block;
   margin: 40px 8px 10px 8px; 
   color: #cccccc;
+    cursor: pointer;
 }
 
 .wrapper {
@@ -31,6 +34,7 @@ h2 {
   width: 100%;
   min-height: 100%;
   padding: 60px 20px;
+  overflow: hidden;
 }
 
 #formContent {
@@ -62,11 +66,11 @@ h2.inactive {
 
 h2.active {
   color: #0d0d0d;
-  border-bottom: 2px solid #5fbae9;
+  border-bottom: 2px solid #b224ac;
 }
 
 input[type=button], input[type=submit], input[type=reset]  {
-  background-color: #56baed;
+  background: -webkit-linear-gradient(left, #7579ff, #b224ef);
   border: none;
   color: white;
   padding: 15px 80px;
@@ -88,7 +92,7 @@ input[type=button], input[type=submit], input[type=reset]  {
 }
 
 input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
-  background-color: #39ace7;
+  background: -webkit-linear-gradient(left, #b224ef , #7579ff);
 }
 
 input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
@@ -122,11 +126,60 @@ input[type=text], input[type=password], input[type=email], input[type=tel] {
 
 input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=tel]:focus {
   background-color: #fff;
-  border-bottom: 2px solid #5fbae9;
+  border-bottom: 2px solid #b224ef;
 }
 
 input[type=text]:placeholder, input[type=password]:placeholder, input[type=email]:placeholder, input[type=tel]:placeholder {
   color: #cccccc;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+  outline: 0;
+  background: lightgray;
+  height: 16px;
+  width: 16px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+input[type="checkbox"]:checked {
+  background: -webkit-linear-gradient(left, #b224ef , #7579ff);
+}
+
+input[type="checkbox"]:hover {
+  filter: brightness(90%);
+}
+
+input[type="checkbox"]:disabled {
+  background: #e6e6e6;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+input[type="checkbox"]:after {
+  content: '';
+  position: relative;
+  left: 40%;
+  top: 20%;
+  width: 15%;
+  height: 40%;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  display: none;
+}
+
+input[type="checkbox"]:checked:after {
+  display: block;
+}
+
+input[type="checkbox"]:disabled:after {
+  border-color: #7b7b7b;
 }
 
 .fadeInDown {
@@ -183,32 +236,32 @@ input[type=text]:placeholder, input[type=password]:placeholder, input[type=email
 }
 
 .fadeIn.first {
-  -webkit-animation-delay: 0.4s;
-  -moz-animation-delay: 0.4s;
-  animation-delay: 0.4s;
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
 .fadeIn.second {
-  -webkit-animation-delay: 0.6s;
-  -moz-animation-delay: 0.6s;
-  animation-delay: 0.6s;
+  -webkit-animation-delay: 0.35s;
+  -moz-animation-delay: 0.35s;
+  animation-delay: 0.35s;
 }
 
 .fadeIn.third {
-  -webkit-animation-delay: 0.8s;
-  -moz-animation-delay: 0.8s;
-  animation-delay: 0.8s;
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 
 .fadeIn.fourth {
-  -webkit-animation-delay: 1s;
-  -moz-animation-delay: 1s;
-  animation-delay: 1s;
+  -webkit-animation-delay: 0.75s;
+  -moz-animation-delay: 0.75s;
+  animation-delay: 0.75s;
 }
 .fadeIn.fifth {
-  -webkit-animation-delay: 1s;
-  -moz-animation-delay: 1s;
-  animation-delay: 1s;
+  -webkit-animation-delay: 0.75s;
+  -moz-animation-delay: 0.75s;
+  animation-delay: 0.75s;
 }
 .underlineHover:after {
   display: block;
@@ -216,13 +269,13 @@ input[type=text]:placeholder, input[type=password]:placeholder, input[type=email
   bottom: -10px;
   width: 0;
   height: 2px;
-  background-color: #56baed;
+  background-color: #b224ac;
   content: "";
   transition: width 0.2s;
 }
 
 .underlineHover:hover {
-  color: #0d0d0d;
+  color: #b224ac;
 }
 
 .underlineHover:hover:after{
@@ -231,6 +284,26 @@ input[type=text]:placeholder, input[type=password]:placeholder, input[type=email
 *:focus {
     outline: none;
 } 
+.toggler {
+    -webkit-transform: translate3d(-80px,0,0);
+    transform: translate3d(-80px,0,0);
+    transition: transform 0.75s ease-in-out;
+}
+.togglel {
+    -webkit-transform: translate3d(80px,0,0);
+    transform: translate3d(80px,0,0);
+    transition: transform 0.75s ease-in-out;
+}
+.toggler2 {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    transition: transform 0.75s ease-in-out;
+}
+.togglel2 {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    transition: transform 0.75s ease-in-out;
+}
 
 #icon {
   width:20%;
@@ -238,4 +311,53 @@ input[type=text]:placeholder, input[type=password]:placeholder, input[type=email
 
 * {
   box-sizing: border-box;
+}
+.slidein1{
+    -webkit-transition: display 0.75s ease-in-out;
+    transition: all 0.75s ease-in-out;
+}
+.slidein2{
+    -webkit-transition: display 0.75s ease-in-out;
+    transition: all 0.75s ease-in-out;
+}
+fieldset{
+    background-color: azure;
+}
+legend{
+    padding-top: 10px;
+}
+
+#message, #msg {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+    align-items: center;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "";
+}
+
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "";
 }

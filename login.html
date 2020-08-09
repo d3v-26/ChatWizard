@@ -23,18 +23,74 @@
                     <br>
                     <img src="static/logo.png" height="80px" width="30px" id="icon" alt="User Icon" />
                 </div>
-                <h2 class="active"> Sign In </h2>
-                <a class="inactive underlineHover" href="signup.html">Sign Up </a>
-                    <form class="loginform" action="home.html">
-                        <input type="text" id="username" class="fadeIn second" name="login" placeholder="Username" required>
-                        <input type="text" id="password" class="fadeIn third" name="login" placeholder="Password" required><br>
+                <h2 class="active" id="slide1"> Sign In </h2>
+                <h2 class="inactive underlineHover" id="slide2">Sign Up </h2>
+                <div class="slidein1">
+                    <form class="loginform1">
+                        <input type="text" id="username1" class="fadeIn second" name="username1" placeholder="Username" required>
+                        <input type="password" id="password1" class="fadeIn third" name="password1" placeholder="Password" required><br>
                          Remember me <input type="checkbox" checked="checked" name="remember" class="fadeIn fourth"><br>
-                        <input type="submit" class="fadeIn fifth" value="Log In">       
+                        <input type="button" class="fadeIn fifth" value="Log In" onclick="loginUser()">                           
+                        <input type="hidden" id="cfe" value="coffee">
                     </form>   
-                <div id="formFooter">
+                </div>
+                <div class="slidein2" style="display: none;">
+                    <form class="loginform2">
+                        <input type="text" id="username2" class="fadeIn second" name="username2" placeholder="Username" required>
+                        <input type="password" id="password2" class="fadeIn third" name="password2" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><br>
+                        <input type="password" id="rpassword" class="fadeIn third" name="login" placeholder="Re-Type Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><br>
+                        <input type="email" class="fadeIn third"  id="mail" placeholder="Your Email" name="mail" required><br>
+                        <input type="tel" id="phone" class="fadeIn third"  placeholder="Enter Your phone no.(+91)" name="phone" required pattern="[0-9]{10}"><br><br>
+                        Keep me Signed In &nbsp;<input type="checkbox" class="fadeIn third"  checked="checked" name="remember"><br>
+                        <input type="submit" class="fadeIn fifth" value="Create Your Free Account"><br>
+                    </form>   
+                </div>
+                <div id="message">
+                  <h3>Password must contain the following:</h3>
+                  <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                  <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                  <p id="number" class="invalid">A <b>number</b></p>
+                  <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                </div>
+                <div id="msg">
+                    <p id="cmp" class="invalid">Must be same as <b>password</b></p>
+                </div>
+                <div id="formFooter" class="foosecond" >
                     <a class="underlineHover" href="forgotpasswd.html">Forgot Password?</a>
+                </div>
+                <div id="formFooter" class="foofirst" style="display: none;">
+                    By signing up you agree to our
+                    <a class="underlineHover" href="#">Terms and Conditions</a>
                 </div>
             </div>
         </div>
+<!--
+        <div id="formContent" class="slidein2" style="display: none;">
+            <div class="fadeIn first">
+                <br>
+                <img src="static/logo.png" height="80px" width="30px" id="icon" alt="User Icon" />
+            </div>
+            <h2 class="active"> Sign Up </h2>
+            <h2 class="inactive underlineHover">Sign In </h2>
+                <form class="loginform" action="home.html">
+                    <input type="text" id="username" class="fadeIn second" name="login" placeholder="Username">
+                    <input type="password" id="password" class="fadeIn third" name="login" placeholder="Password"><br>
+                    <input type="password" id="rpassword" class="fadeIn third" name="login" placeholder="Re-Type Password"><br>
+                    <input type="email" class="fadeIn third"  id="mail" placeholder="Your Email" name="mail" required><br>
+                    <input type="tel" id="phone" class="fadeIn third"  placeholder="Enter Your phone no.(+91)" name="phone" required pattern="[0-9]{10}"><br><br>
+                    Keep me Signed In &nbsp;<input type="checkbox" class="fadeIn third"  checked="checked" name="remember"><br>
+                    <input type="submit" class="fadeIn fifth" value="Create Your Free Account"><br>
+                </form>   
+            <div id="formFooter">
+                By signing up you agree to our
+                <a class="underlineHover" href="#">Terms and Conditions</a>
+            </div>
+        </div>
+    </div>
+-->
+        <script type="text/javascript" src="js/view.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/auth.js"></script>
+            <script type="text/javascript" src="js/validate.js"></script>
     </body>
 </html>
