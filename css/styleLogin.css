@@ -8,14 +8,21 @@ body {
   height: 100vh;
 }
 
-a, nav a{
+a{
   color: #7579ff;
   display:inline-block;
   text-decoration: none;
   font-weight: 400;
 }
 
-h2 {
+nav a{
+  color: #7579ff;
+  display:inline-block;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.header h5 {
   text-align: center;
   font-size: 16px;
   font-weight: 600;
@@ -23,7 +30,7 @@ h2 {
   display:inline-block;
   margin: 40px 8px 10px 8px; 
   color: #cccccc;
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .wrapper {
@@ -49,6 +56,7 @@ h2 {
   -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
   box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
   text-align: center;
+  margin-top: 15px;
 }
 
 #formFooter {
@@ -60,11 +68,11 @@ h2 {
   border-radius: 0 0 10px 10px;
 }
 
-h2.inactive {
+h5.inactive2 {
   color: #cccccc;
 }
 
-h2.active {
+h5.active2 {
   color: #0d0d0d;
   border-bottom: 2px solid #b224ac;
 }
@@ -278,9 +286,9 @@ input[type="checkbox"]:disabled:after {
   color: #b224ac;
 }
 
-.underlineHover:hover:after{
+/*.underlineHover:hover:after{
   width: 100%;
-}
+}*/
 *:focus {
     outline: none;
 } 
@@ -360,4 +368,29 @@ legend{
   position: relative;
   left: -35px;
   content: "";
+}
+.header{
+    display: inline-block;
+    text-align: center;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+#myBtn:hover {
+  background-color: #555;
 }

@@ -4,32 +4,60 @@
         <meta charset="utf-8">
         <title>Sign Up</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/footer.css">
         <link rel="stylesheet" href="css/navbar.css">
-        <link rel="stylesheet" href="css/styleLogin.css">
+        <link rel="stylesheet" href="css/styleLogin.css">        
+        <script src="https://kit.fontawesome.com/a84cc82cbd.js" crossorigin="anonymous"></script>
     </head>
     <body>
-
-            <nav class="fadeInDown">
-                    <a class="underlineHover2" href="index.html"><img src="static/logo.png" height="50px" width="70px" class="logo" alt="logo"></a>
-                    <a class="underlineHover2" href="index.html">Home</a>
-                    <a class="underlineHover2" href="about.html">About</a>
-                    <a class="underlineHover2" href="#">Contact Us</a>
-                    <a class="underlineHover2" href="login.html">Sign In</a>
-            </nav>
-
+        <nav class="fadeInDown">
+         <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                  <a class="nav-link underlineHover2" href="index.html"><img src="static/logo.png" height="50px" width="70px" class="logo" alt="logo"></a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="nav-link underlineHover2" href="index.html">Home</a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="nav-link underlineHover2" href="about.html">About</a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="nav-link underlineHover2" href="#">Contact Us</a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="nav-link underlineHover2" href="login.html">Sign In</a>
+                </li>
+            </ul>
+        </nav>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
         <div class="wrapper fadeInDown">
             <div id="formContent">
                 <div class="fadeIn first">
                     <br>
-                    <img src="static/logo.png" height="80px" width="30px" id="icon" alt="User Icon" />
+                    <img src="static/logo.png" height="100px" width="30px" id="icon" alt="User Icon" />
+                    <div class="snow">
+                      <div class="flakeb1"></div>
+                      <div class="flakeb2"></div>
+                      <div class="flakeb3"></div>
+                      <div class="flakeb4"></div>
+                      <div class="flakeb5"></div>
+                      <div class="flakeb6"></div>
+                      <div class="flakeb7"></div>
+                      <div class="flakeb8"></div>
+                    </div>
+
                 </div>
-                <h2 class="active" id="slide1"> Sign Up </h2>
-                <h2 class="inactive underlineHover" id="slide2">Sign In </h2>
+                <div class="header">
+                    <h5 class="active2" id="slide1"> Sign In </h5>
+                    <h5 class="inactive2 underlineHover" id="slide2">Sign Up </h5>
+                </div>
                 <div class="slidein2" style="display: none;">
                     <form class="loginform" action="home.html">
                         <input type="text" id="username1" class="fadeIn second" name="username1" placeholder="Username" required>
                         <input type="text" id="password1" class="fadeIn third" name="password1" placeholder="Password" required><br>
-                         Remember me <input type="checkbox" checked="checked" name="remember" class="fadeIn fourth"><br>
+                         Remember me <input type="checkbox" checked="checked" name="remember" class="fadeIn fourth mt-1 ml-2"><br>
                         <input type="button" class="fadeIn fifth" value="Log In" onclick="loginUser()">       
                     </form>   
                 </div>
@@ -40,7 +68,7 @@
                         <input type="password" id="rpassword" class="fadeIn third" name="login" placeholder="Re-Type Password" required><br>
                         <input type="email" class="fadeIn third"  id="mail" placeholder="Your Email" name="mail" required><br>
                         <input type="tel" id="phone" class="fadeIn third"  placeholder="Enter Your phone no.(+91)" name="phone" required pattern="[0-9]{10}"><br><br>
-                        Keep me Signed In &nbsp;<input type="checkbox" class="fadeIn third"  checked="checked" name="remember"><br>
+                        Keep me Signed In &nbsp;<input type="checkbox" class="fadeIn third mt-1 ml-2"  checked="checked" name="remember"><br>
                         <input type="submit" class="fadeIn fifth" value="Create Your Free Account"><br>
                     </form>   
                 </div>
@@ -55,16 +83,114 @@
                     <p id="cmp" class="invalid">Must be same as <b>password</b></p>
                 </div>
                 <div id="formFooter" class="foofirst" style="display: none;">
-                    <a class="underlineHover" href="forgotpasswd.html">Forgot Password?</a>
+                    <ul class="list-unstyled">
+                          <li class="nav-item">
+                            <a class="nav-link underlineHover" href="forgotpasswd.html">Forgot Password?</a>
+                          </li>
+                    </ul>
                 </div>
-                <div id="formFooter" class="foosecond">
-                    By signing up you agree to our
-                    <a class="underlineHover" href="#">Terms and Conditions</a>
+                <div id="formFooter" class="foosecond" >
+                    <ul class="list-unstyled">
+                          <li class="nav-item">By signing up you agree to our
+                            <a class="nav-link underlineHover" href="#">Terms and Conditions</a>
+                          </li>
+                    </ul>                    
                 </div>
             </div>
             </div>
+        <div class="footer navbar-dark bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mx-auto">
+                        <h5 class="font-weight-bold mt-3 mb-4">ChatWiz</h5>
+                        <p> Need Help? Contact us any time. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <hr class="clearfix w-100 d-md-none">
+                    <div class="col-md-2 offset-md-2 mx-auto">
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Support</h5>
+                        <ul class="list-unstyled">
+                          <li class="nav-item">
+                            <a class="nav-link underlineHover" href="#">Troubleshooting</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link underlineHover"  href="#">Common Questions</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link underlineHover"  href="#">Report a Bug</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link underlineHover"  href="#">Get Help</a>
+                          </li>
+                        </ul>
+                    </div>
+                    <hr class="clearfix w-100 d-md-none">
+                    <div class="col-md-2 offset-md-2 mx-auto">
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Company</h5>
+                        <ul class="list-unstyled">
+                          <li>
+                            <a class="nav-link underlineHover"  href="#">Blog</a>
+                          </li>
+                          <li>
+                            <a class="nav-link underlineHover"  href="#">Contact Us</a>
+                          </li>
+                          <li>
+                            <a class="nav-link underlineHover"  href="#">About</a>
+                          </li>
+                          <li>
+                            <a class="nav-link underlineHover"  href="#">Developers</a>
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <ul class="list-unstyled list-inline text-center py-2">
+                <li class="list-inline-item">
+                  <h5 class="mb-1">Already A Member</h5>
+                </li>
+                <li class="list-inline-item">
+                  <a href="login.html" class="btn btn-danger btn-rounded">Log In!</a>
+                </li>
+            </ul>
+            <hr>
+            <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                  <a class="mx-2 underlineHover">
+                    <i class="fab fa-facebook-f"> </i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="mx-2 underlineHover">
+                    <i class="fab fa-twitter"> </i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="mx-2 underlineHover">
+                    <i class="fab fa-google-plus-g"> </i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="mx-2 underlineHover">
+                    <i class="fab fa-linkedin-in"> </i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="mx-2 underlineHover">
+                    <i class="fab fa-dribbble"> </i>
+                  </a>
+                </li>
+            </ul>
+            <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                <a href="index.html" class="nav-link underlineHover"> ChatWiz</a>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" ></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" ></script>
         <script type="text/javascript" src="js/view.js"></script>
         <script type="text/javascript" src="js/auth.js"></script>
         <script type="text/javascript" src="js/validate.js"></script>
+        <script src="js/eventFunctions.js"></script>
     </body>
 </html>

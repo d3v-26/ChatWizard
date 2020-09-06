@@ -43,10 +43,6 @@ var pwd = "admin";
 function loginUser(){
     var usname = document.getElementById("username1").value;
     var usrpwd = document.getElementById("password1").value;
-//    console.log(usname);
-//    console.log(usrpwd);
-//    console.log(uname);
-//    console.log(pwd);
     if(usname == uname && pwd == usrpwd)
         {
             window.location.href="home.html";

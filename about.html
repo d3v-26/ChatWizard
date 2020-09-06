@@ -4,20 +4,36 @@
         <meta charset="utf-8">
         <title>ChatWiz</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="css/styleInx.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <script src="https://kit.fontawesome.com/a84cc82cbd.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <nav class="fadeInDown">
-                    <a class="underlineHover2" href="index.html"><img src="static/logo.png" height="50px" width="70px" class="logo" alt="logo"></a>
-                    <a class="underlineHover2" href="index.html">Home</a>
-                    <a class="underlineHover2" href="#">Contact Us</a>
-                    <a class="underlineHover2" href="signup.html">Sign up</a>
-                    <a class="underlineHover2" href="login.html">Sign In</a>
-            </nav>
-    <br><br>
-        <div class="container fadeInDown">
-          <div class="card">
+         <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                  <a class="nav-link underlineHover2" href="index.html"><img src="static/logo.png" height="50px" width="70px" class="logo" alt="logo"></a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="nav-link underlineHover2" href="index.html">Home</a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="nav-link underlineHover2" href="#">Contact Us</a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="nav-link underlineHover2" href="signup.html">Sign up</a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="nav-link underlineHover2" href="login.html">Sign In</a>
+                </li>
+            </ul>
+        </nav>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+        <div class="container2 fadeInDown my-5">
+          <div class="card2">
             <div class="item front-side">
               <img src="static/journey.jpg" />
                 <h2>Story of how it all came together</h2>
@@ -27,7 +43,7 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Venenatis a condimentum vitae sapien pellentesque habitant morbi. Urna id volutpat lacus laoreet non curabitur gravida arcu ac. Morbi tristique senectus et netus et. Enim diam vulputate ut pharetra sit amet aliquam id diam. Nisl pretium fusce id velit ut tortor pretium viverra. Faucibus a pellentesque sit amet porttitor.</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card2">
             <div class="item front-side">
               <img src="https://webdevtrick.com/wp-content/uploads/design.jpg" />
                 <h2>A new Journey Begins....</h2>
@@ -37,7 +53,7 @@
                 <p>Urna duis convallis convallis tellus. Vivamus at augue eget arcu dictum varius duis. Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque. Non odio euismod lacinia at quis risus sed vulputate odio. Vestibulum morbi blandit cursus risus at ultrices mi. Tempor orci eu lobortis elementum nibh tellus molestie nunc. Egestas sed tempus urna et. Tellus in metus vulputate eu. Non arcu risus quis varius quam quisque id. Ornare arcu odio ut sem.</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card2">
             <div class="item front-side">
               <img src="https://webdevtrick.com/wp-content/uploads/auto.jpg" />
                 <h2>A new creation....</h2>
@@ -49,6 +65,96 @@
           
           </div>
         </div>
-       
+       <div class="footer navbar-dark bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mx-auto">
+                        <h5 class="font-weight-bold mt-3 mb-4">ChatWiz</h5>
+                        <p> Need Help? Contact us any time. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <hr class="clearfix w-100 d-md-none">
+                    <div class="col-md-2 offset-md-2 mx-auto">
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Support</h5>
+                        <ul class="list-unstyled">
+                          <li class="nav-item">
+                            <a class="nav-link underlineHover" href="#">Troubleshooting</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link underlineHover"  href="#">Common Questions</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link underlineHover"  href="#">Report a Bug</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link underlineHover"  href="#">Get Help</a>
+                          </li>
+                        </ul>
+                    </div>
+                    <hr class="clearfix w-100 d-md-none">
+                    <div class="col-md-2 offset-md-2 mx-auto">
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Company</h5>
+                        <ul class="list-unstyled">
+                          <li>
+                            <a class="nav-link underlineHover"  href="#">Blog</a>
+                          </li>
+                          <li>
+                            <a class="nav-link underlineHover"  href="#">Contact Us</a>
+                          </li>
+                          <li>
+                            <a class="nav-link underlineHover"  href="#">About</a>
+                          </li>
+                          <li>
+                            <a class="nav-link underlineHover"  href="#">Developers</a>
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <ul class="list-unstyled list-inline text-center py-2">
+                <li class="list-inline-item">
+                  <h5 class="mb-1">Register for free</h5>
+                </li>
+                <li class="list-inline-item">
+                  <a href="signup.html" class="btn btn-danger btn-rounded">Sign up!</a>
+                </li>
+            </ul>
+            <hr>
+            <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                  <a class="mx-2 underlineHover">
+                    <i class="fab fa-facebook-f"> </i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="mx-2 underlineHover">
+                    <i class="fab fa-twitter"> </i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="mx-2 underlineHover">
+                    <i class="fab fa-google-plus-g"> </i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="mx-2 underlineHover">
+                    <i class="fab fa-linkedin-in"> </i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="mx-2 underlineHover">
+                    <i class="fab fa-dribbble"> </i>
+                  </a>
+                </li>
+            </ul>
+            <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                <a href="index.html" class="nav-link underlineHover"> ChatWiz</a>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" ></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" ></script>
+        <script src="js/eventFunctions.js"></script>
     </body>
 </html>

@@ -4,21 +4,40 @@
         <meta charset="utf-8">
         <title>ChatWiz</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="css/styleInx.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <script src="https://kit.fontawesome.com/a84cc82cbd.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <nav class="fadeInDown">
-                    <a class="underlineHover2" href="index.html"><img src="static/logo.png" height="50px" width="70px" class="logo" alt="logo"></a>
-                    <a class="underlineHover2" href="index.html">Home</a>
-                    <a class="underlineHover2" href="about.html">About</a>
-                    <a class="underlineHover2" href="#">Contact Us</a>
-                    <a class="underlineHover2" href="signup.html">Sign up</a>
-                    <a class="underlineHover2" href="login.html">Sign In</a>
-            </nav>
+         <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                  <a class="nav-link underlineHover2" href="index.html"><img src="static/logo.png" height="50px" width="70px" class="logo" alt="logo"></a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="nav-link underlineHover2" href="index.html">Home</a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="nav-link underlineHover2" href="about.html">About</a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="nav-link underlineHover2" href="#">Contact Us</a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="nav-link underlineHover2" href="signup.html">Sign up</a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="nav-link underlineHover2" href="login.html">Sign In</a>
+                </li>
+            </ul>
+        </nav>
         <br><br>
-        <div class="container fadeInDown">
-          <div class="card">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+        <div class="container2 fadeInDown">
+          <div class="card2">
             <div class="item front-side">
               <img src="static/journey.jpg" />
                 <h2>Most trusted Messaging Services.</h2>
@@ -28,7 +47,7 @@
               <p>With Chat Wiz, you'll get fast, simple, Real-time chatting.<br> you can connect to anyone across the world.<br> Available for free to any devices across the world!!!</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card2">
             <div class="item front-side">
               <img src="https://webdevtrick.com/wp-content/uploads/design.jpg" />
                 <h2>Secure messaging</h2>
@@ -38,17 +57,17 @@
                 <p>We provide end-to-end secure encrypted messaging.<br> This feature allows message to be accessed only by you and the person you're communicating with.</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card2">
             <div class="item front-side">
               <img src="https://webdevtrick.com/wp-content/uploads/auto.jpg" />
                 <h2>Access your Free messaging Services.</h2>
             </div>
             <div class="item back-side">
               <img src="https://webdevtrick.com/wp-content/uploads/hardware.jpg" />
-                <p>You can access your free messaging services by signing up with us.<br> To sign up click <a class="underlineHover2" href="signup.html">here</a></p>
+                <p>You can access your free messaging services by signing up with us.<br> To sign up click <a class="nav-link underlineHover2 w-25" href="signup.html">HERE</a></p>
             </div>
           </div>
-            <div class="card">
+            <div class="card2">
             <div class="item front-side">
               <img src="https://webdevtrick.com/wp-content/uploads/auto.jpg" />
                 <h2>Contact Us</h2>
@@ -56,46 +75,101 @@
             <div class="item back-side">
               <img src="https://webdevtrick.com/wp-content/uploads/hardware.jpg" />
                 <p>Author: Dev Patel</p>
-                    <p>Contact: <a class="underlineHover2" href="mailto:celestial26032@gmail.com">test@test.com</a></p>
+                    <p>Contact: <a class="nav-link underlineHover2 w-50" href="mailto:celestial26032@gmail.com">test@test.com</a></p>
             </div>
           </div>
         </div>
-<!--        <div class="wrapper  fadeInDown">
-            <div id="content">
-                <div class="container">
-                  <div class="card">
-                    <div class="item front-side">
-                      <img src="static/journey.jpg" />
-                        <h2>Most trusted Messaging Services.</h2>   
+        <div class="footer navbar-dark bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mx-auto">
+                        <h5 class="font-weight-bold mt-3 mb-4">ChatWiz</h5>
+                        <p> Need Help? Contact us any time. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </p>
                     </div>
-                    <div class="item back-side">
-                      <p>With Chat Wiz, you'll get fast, simple, Real-time chatting.<br> you can connect to anyone across the world.<br> Available for free to any devices across the world!!!</p>
+                    <hr class="clearfix w-100 d-md-none">
+                    <div class="col-md-2 offset-md-2 mx-auto">
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Support</h5>
+                        <ul class="list-unstyled">
+                          <li class="nav-item">
+                            <a class="nav-link underlineHover" href="#">Troubleshooting</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link underlineHover"  href="#">Common Questions</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link underlineHover"  href="#">Report a Bug</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link underlineHover"  href="#">Get Help</a>
+                          </li>
+                        </ul>
                     </div>
-                  </div>
+                    <hr class="clearfix w-100 d-md-none">
+                    <div class="col-md-2 offset-md-2 mx-auto">
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Company</h5>
+                        <ul class="list-unstyled">
+                          <li>
+                            <a class="nav-link underlineHover"  href="#">Blog</a>
+                          </li>
+                          <li>
+                            <a class="nav-link underlineHover"  href="#">Contact Us</a>
+                          </li>
+                          <li>
+                            <a class="nav-link underlineHover"  href="#">About</a>
+                          </li>
+                          <li>
+                            <a class="nav-link underlineHover"  href="#">Developers</a>
+                          </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <br><br>
-            <div id="content">
-                <h2>Secure messaging</h2>
-                <div id="formFooter">
-                    <p>We provide end-to-end secure encrypted messaging.<br> This feature allows message to be accessed only by you and the person you're communicating with.</p>
-                </div>
+            <hr>
+            <ul class="list-unstyled list-inline text-center py-2">
+                <li class="list-inline-item">
+                  <h5 class="mb-1">Register for free</h5>
+                </li>
+                <li class="list-inline-item">
+                  <a href="signup.html" class="btn btn-danger btn-rounded">Sign up!</a>
+                </li>
+            </ul>
+            <hr>
+            <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                  <a class="mx-2 underlineHover">
+                    <i class="fab fa-facebook-f"> </i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="mx-2 underlineHover">
+                    <i class="fab fa-twitter"> </i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="mx-2 underlineHover">
+                    <i class="fab fa-google-plus-g"> </i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="mx-2 underlineHover">
+                    <i class="fab fa-linkedin-in"> </i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="mx-2 underlineHover">
+                    <i class="fab fa-dribbble"> </i>
+                  </a>
+                </li>
+            </ul>
+            <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                <a href="index.html" class="nav-link underlineHover"> ChatWiz</a>
             </div>
-            <br><br>
-            <div id="content">
-                <h2>Access your Free messaging Services.</h2>
-                <div id="formFooter">
-                    <p>You can access your free messaging services by signing up with us.<br> To sign up click <a class="underlineHover2" href="signup.html">here</a></p>
-                </div>
-            </div>
-            <br><br><br><br>
-            <div id="content">
-                <h2>Contact Us</h2>
-                <div id="formFooter">
-                    <p>Author: Dev Patel</p>
-                    <p>Contact: <a class="underlineHover2" href="mailto:celestial26032@gmail.com">test@test.com</a></p>
-                </div>
-            </div>
-        </div>-->
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" ></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" ></script>
+        <script src="js/eventFunctions.js"></script>
+        
     </body>
 </html>

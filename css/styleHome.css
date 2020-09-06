@@ -1,0 +1,15 @@
+.arrow{
+    position: fixed;
+    width: 0px;
+    height: 0px;
+    top: 42%;
+    left: 185px;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-right: 30px solid #343a40;
+}
+.wrapper{
+    display: flex;
+    width: 1800px;
+    height: 1000px;
+}
