@@ -4,8 +4,9 @@
 body {
 /*    background-color: #56baed;
     background-image: url(../static/nature.jpg);
-    background-repeat: no-repeat;*/
-    background: -webkit-linear-gradient(left, #7579ff, #b224ef);
+    background-repeat: no-repeat;
+    background: -webkit-linear-gradient(left, #7579ff, #b224ef);*/
+    background: linear-gradient(45deg, #00dbde, #fc00ff) no-repeat fixed;
   font-family: "Poppins", sans-serif;
   height: 100vh;
 }

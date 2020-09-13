@@ -3,7 +3,7 @@
 
 body {
     /*background-color: #56baed;*/
-  background: -webkit-linear-gradient(left, #7579ff, #b224ef);
+  background: linear-gradient(45deg, #00dbde, #fc00ff) no-repeat fixed;
   font-family: "Poppins", sans-serif;
   height: 100vh;
 }
@@ -393,4 +393,8 @@ legend{
 
 #myBtn:hover {
   background-color: #555;
+}
+h3
+{
+    color: azure;
 }

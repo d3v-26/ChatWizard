@@ -12,11 +12,13 @@
         <script src="https://kit.fontawesome.com/a84cc82cbd.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <nav class="fadeInDown">
-         <ul class="list-unstyled list-inline text-center">
-                <li class="list-inline-item">
-                  <a class="nav-link underlineHover2" href="index.html"><img src="static/logo.png" height="50px" width="70px" class="logo" alt="logo"></a>
-                </li>
+        <nav class="navbar fixed-top bg-dark fadeInDown navbar-expand-lg">
+            <a class="navbar-brand" href="index.html"><img src="static/logo.png" class="logo" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars fa-lg"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mx-auto list-unstyled list-inline text-center">
                 <li class="list-inline-item">
                   <a class="nav-link underlineHover2" href="index.html">Home</a>
                 </li>
@@ -24,12 +26,13 @@
                   <a class="nav-link underlineHover2" href="about.html">About</a>
                 </li>
                 <li class="list-inline-item">
-                  <a class="nav-link underlineHover2" href="#">Contact Us</a>
+                  <a class="nav-link underlineHover2" href="team.html">From The Team</a>
                 </li>
                 <li class="list-inline-item">
                   <a class="nav-link underlineHover2" href="signup.html">Sign up</a>
-                </li>
+                </li>                
             </ul>
+            </div>            
         </nav>
         <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
         <div class="wrapper fadeInDown">

@@ -7,16 +7,28 @@
         <link rel="stylesheet" href="css/styleLogin.css">
     </head>
     <body>
-    
-            <nav class="fadeInDown">
-                    <a class="underlineHover2" href="index.html"><img src="static/logo.png" height="50px" width="70px" class="logo" alt="logo"></a>
-                    <a class="underlineHover2" href="index.html">Home</a>
-                    <a class="underlineHover2" href="about.html">About</a>
-                    <a class="underlineHover2" href="#">Contact Us</a>
-                    <a class="underlineHover2" href="signup.html">Sign up</a>
-            </nav>
-
-      <br><br>
+    <nav class="navbar fixed-top bg-dark fadeInDown navbar-expand-lg">
+            <a class="navbar-brand" href="index.html"><img src="static/logo.png" class="logo" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars fa-lg"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mx-auto list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                  <a class="nav-link underlineHover2" href="index.html">Home</a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="nav-link underlineHover2" href="about.html">About</a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="nav-link underlineHover2" href="#">Contact Us</a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="nav-link underlineHover2" href="signup.html">Sign up</a>
+                </li>
+            </ul>
+            </div>            
+        </nav>
         <div class="wrapper fadeInDown">
             <div id="formContent">
                 <div class="fadeIn first">
