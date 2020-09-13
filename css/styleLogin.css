@@ -329,7 +329,7 @@ input[type="checkbox"]:disabled:after {
     transition: all 0.75s ease-in-out;
 }
 fieldset{
-    background-color: azure;
+    background: linear-gradient(45deg, #00dbde, #fc00ff) no-repeat fixed;
 }
 legend{
     padding-top: 10px;
