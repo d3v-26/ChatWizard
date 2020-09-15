@@ -37,17 +37,60 @@
 //        document.getElementById("msg").innerHTML="Invalid Username or password";
 //        document.getElementById("msg").style.color="red";
 //    }
-//}
+//}box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
 var uname = "admin";
 var pwd = "admin";
 function loginUser(){
-    var usname = document.getElementById("username1").value;
-    var usrpwd = document.getElementById("password1").value;
+    var usname = $("#username1").val();
+    var usrpwd = $("#password1").val();
     if(usname == uname && pwd == usrpwd)
-        {
+    {
             window.location.href="home.html";
-        }
+    }
     else{
-        alert("Incorrect username or password");
+        $("#formContent").effect("shake",{direction:"left",times: 4, distance: 20},300);
+        $("#username1").val('').css("box-shadow","0 0px 6px 0 rgba(255,0,0,0.5)");
+        $("#password1").val('').css("box-shadow","0 0px 6px 0 rgba(255,0,0,0.5)");
+        setTimeout(function(){
+            $("#username1").css("box-shadow","none");
+            $("#password1").css("box-shadow","none");
+        },3000);
+    }
+}
+
+function createUser(){
+    var usr = $("#username2");
+    var pass = $("#password2");
+    var rpass = $("#rpassword");
+    var mail = $("#mail");
+    var phone = $("#phone");
+    var flag = 0;
+    if(usr.val() == '' || mail.val() == '' || phone.val() == '' || pass.val() == '' || rpass.val() == '')
+    {
+        flag = 1;
+    }
+    if(pass.hasClass("flagged") || rpass.hasClass("flagged"))
+    {
+        flag = 1;   
+    }
+    if(flag==1)
+    {
+        $("#formContent").effect("shake",{direction:"left",times: 4, distance: 20},300);
+        usr.val('').css("box-shadow","0 0px 6px 0 rgba(255,0,0,0.5)");
+        pass.val('').css("box-shadow","0 0px 6px 0 rgba(255,0,0,0.5)");
+        rpass.val('').css("box-shadow","0 0px 6px 0 rgba(255,0,0,0.5)");
+        mail.val('').css("box-shadow","0 0px 6px 0 rgba(255,0,0,0.5)");
+        phone.val('').css("box-shadow","0 0px 6px 0 rgba(255,0,0,0.5)");
+        setTimeout(function(){
+            usr.css("box-shadow","none");
+            pass.css("box-shadow","none");
+            rpass.css("box-shadow","none");
+            mail.css("box-shadow","none");
+            phone.css("box-shadow","none");
+        },3000);
+    }
+    else
+    {
+        window.location.href = "login.html";
     }
 }

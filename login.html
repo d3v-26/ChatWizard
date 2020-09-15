@@ -52,32 +52,32 @@
                     </div>
 
                 </div>
-                <div class="header">
+                <div class="header fadeIn first">
                     <h5 class="active2" id="slide1"> Sign In </h5>
-                    <h5 class="inactive2 underlineHover" id="slide2">Sign Up </h5>
+                    <h5 class="inactive2 underlineHover2" id="slide2">Sign Up </h5>
                 </div>
                 <div class="slidein1">
                     <form class="loginform1">
                         <input type="text" id="username1" class="fadeIn second" name="username1" placeholder="Username" required>
                         <input type="password" id="password1" class="fadeIn third" name="password1" placeholder="Password" required><br>
-                         Remember me <input type="checkbox" checked="checked" name="remember" class="fadeIn fourth mt-1 ml-2"><br>
-                        <input type="button" class="fadeIn fifth" value="Log In" onclick="loginUser()">                           
+                        <label  class="fadeIn fourth">Remember me </label><input type="checkbox" checked="checked" name="remember" class="fadeIn fourth mt-1 ml-2"><br>
+                        <input type="button" id="lgn-btn" class="fadeIn fifth" value="Log In" onclick="loginUser()">                           
                         <input type="hidden" id="cfe" value="coffee">
                     </form>   
                 </div>
                 <div class="slidein2" style="display: none;">
                     <form class="loginform2">
-                        <input type="text" id="username2" class="fadeIn second" name="username2" placeholder="Username" required>
+                        <input type="text" id="username2" class="fadeIn second" name="username2" placeholder="Username">
                         <input type="password" id="password2" class="fadeIn third" name="password2" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><br>
                         <input type="password" id="rpassword" class="fadeIn third" name="login" placeholder="Re-Type Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><br>
                         <input type="email" class="fadeIn third"  id="mail" placeholder="Your Email" name="mail" required><br>
                         <input type="tel" id="phone" class="fadeIn third"  placeholder="Enter Your phone no.(+91)" name="phone" required pattern="[0-9]{10}"><br><br>
-                        Keep me Signed In &nbsp;<input type="checkbox" class="fadeIn third mt-1 ml-2"  checked="checked" name="remember"><br>
-                        <input type="submit" class="fadeIn fifth" value="Create Your Free Account"><br>
+                        <label  class="fadeIn third">Keep me Signed In</label><input type="checkbox" class="fadeIn third mt-1 ml-2"  checked="checked" name="remember"><br>
+                        <input type="submit" class="fadeIn fifth" value="Create Your Free Account" onclick="createUser()"><br>
                     </form>   
                 </div>
                 <div id="message">
-                  <h3>Password must contain the following:</h3>
+                  <h5 class="text-danger">Password must contain the following:</h5>
                   <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
                   <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
                   <p id="number" class="invalid">A <b>number</b></p>
@@ -197,5 +197,7 @@
         <script type="text/javascript" src="js/auth.js"></script>
         <script type="text/javascript" src="js/validate.js"></script>
         <script src="js/eventFunctions.js"></script>
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
     </body>
 </html>
